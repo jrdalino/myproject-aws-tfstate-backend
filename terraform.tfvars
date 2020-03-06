@@ -1,10 +1,10 @@
 # General
-aws_region  = "ap-southeast-1"
-aws_profile = "first.last@example.com"
-aws_account = "123456789012"
+aws_region  = "ap-southeast-2"
+aws_profile = "john.doe@example.com"
+aws_account = "222337787619"
 
 # S3 Bucket
-aws_s3_bucket_bucket = "123456789012-ap-southeast-1-terraform-state"
+aws_s3_bucket_bucket = "222337787619-ap-southeast-2-terraform-state"
 
 # DynamoDB Table
 aws_dynamodb_table_name           = "terraform-state-lock"
