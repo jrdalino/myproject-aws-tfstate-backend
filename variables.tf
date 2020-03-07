@@ -21,7 +21,6 @@ variable aws_s3_bucket_bucket {
 }
 
 # DynamoDB Table
-
 variable aws_dynamodb_table_name {
   type        = string
   description = "The name of the table, this needs to be unique within a region."    
