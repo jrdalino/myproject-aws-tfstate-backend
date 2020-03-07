@@ -1,3 +1,4 @@
+# S3 Bucket
 resource "aws_s3_bucket" "this" {
   bucket = var.aws_s3_bucket_bucket
   region = var.aws_region
@@ -9,6 +10,7 @@ resource "aws_s3_bucket" "this" {
   }
 }
 
+# DynamoDB Table
 resource "aws_dynamodb_table" "this" {
   name           = var.aws_dynamodb_table_name
   hash_key       = var.aws_dynamodb_table_hash_key
