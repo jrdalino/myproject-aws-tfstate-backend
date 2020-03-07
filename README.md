@@ -26,12 +26,12 @@ terraform {
 ```
 
 ## Inputs
-- S3
+S3
 | Name | Description |
 |------|-------------|
 | s3_bucket_name | S3 bucket name |
  
-- DynamoDB
+DynamoDB
 | Name | Description |
 |------|-------------|
 | name | DynamoDB table name |
@@ -40,14 +40,14 @@ terraform {
 | write_capacity | DynamoDB write capacity |
 
 ## Outputs
-- S3
+S3
 | Name | Description |
 |------|-------------|
 | id | The name of the bucket |
 | arn | The ARN of the bucket. Will be of format arn:aws:s3:::bucketname |
 | bucket_domain_name | The bucket domain name. Will be of format bucketname.s3.amazonaws.com |
 
-- DynamoDB
+DynamoDB
 | Name | Description |
 |------|-------------|
 | arn | The arn of the table |
