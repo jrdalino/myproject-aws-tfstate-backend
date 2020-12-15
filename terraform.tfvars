@@ -2,7 +2,7 @@
 aws_region     = "ap-southeast-1"
 aws_account    = "449276385511"
 product_domain = "org"
-environment    = "org"
+environment    = "prd"
 
 # S3 Bucket
 aws_s3_bucket_bucket = "449276385511-ap-southeast-1-terraform-state"
