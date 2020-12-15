@@ -1,9 +1,11 @@
 # General
-aws_region  = "ap-southeast-1"
-aws_account = "707538076348"
+aws_region     = "ap-southeast-1"
+aws_account    = "449276385511"
+product_domain = "org"
+environment    = "org"
 
 # S3 Bucket
-aws_s3_bucket_bucket = "707538076348-ap-southeast-1-terraform-state"
+aws_s3_bucket_bucket = "449276385511-ap-southeast-1-terraform-state"
 
 # DynamoDB Table
 aws_dynamodb_table_name           = "terraform-state-lock"

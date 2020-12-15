@@ -1,12 +1,18 @@
 # S3 Bucket
 resource "aws_s3_bucket" "this" {
   bucket = var.aws_s3_bucket_bucket
-  region = var.aws_region
   acl    = "private"
 
   # Versioning
   versioning {
     enabled = true
+  }
+
+  # Tagging
+  tags = {
+    Name          = var.aws_s3_bucket_bucket
+    ProductDomain = var.product_domain
+    Environment   = var.environment
   }
 }
 
@@ -20,5 +26,12 @@ resource "aws_dynamodb_table" "this" {
   attribute {
     name = var.aws_dynamodb_table_hash_key
     type = "S"
+  }
+
+  # Tagging
+  tags = {
+    Name          = var.aws_dynamodb_table_name
+    ProductDomain = var.product_domain
+    Environment   = var.environment
   }
 }

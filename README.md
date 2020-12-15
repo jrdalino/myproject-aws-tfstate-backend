@@ -5,6 +5,8 @@
 ## Initialize, Review Plan and Apply
 ```
 $ terraform init
+$ terraform fmt
+$ terraform validate
 $ terraform plan
 $ terraform apply
 ```
@@ -17,7 +19,7 @@ $ vi state_config.tf
 terraform {
   backend "s3" {
     region         = "ap-southeast-1"
-    bucket         = "707538076348-ap-southeast-1-terraform-state"
+    bucket         = "449276385511-ap-southeast-1-terraform-state"
     key            = "terraform.tfstate"
     encrypt        = "true"
     dynamodb_table = "terraform-state-lock"
